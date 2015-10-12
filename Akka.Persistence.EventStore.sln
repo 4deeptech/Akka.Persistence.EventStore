@@ -1,0 +1,28 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akka.Persistence.EventStore", "Akka.Persistence.EventStore\Akka.Persistence.EventStore.csproj", "{56C967DD-3C29-46E5-9A73-A1565298C36B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akka.Persistence.EventStore.Tests", "Akka.Persistence.EventStore.Tests\Akka.Persistence.EventStore.Tests.csproj", "{8E537707-5507-425C-8B29-A2CCC88CCD72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56C967DD-3C29-46E5-9A73-A1565298C36B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56C967DD-3C29-46E5-9A73-A1565298C36B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56C967DD-3C29-46E5-9A73-A1565298C36B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56C967DD-3C29-46E5-9A73-A1565298C36B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E537707-5507-425C-8B29-A2CCC88CCD72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E537707-5507-425C-8B29-A2CCC88CCD72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E537707-5507-425C-8B29-A2CCC88CCD72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E537707-5507-425C-8B29-A2CCC88CCD72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
