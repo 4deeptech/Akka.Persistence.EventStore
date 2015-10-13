@@ -144,6 +144,13 @@ namespace EventStore.Persistence
                         var json = JsonConvert.SerializeObject(x, _serializerSettings);
                         var data = Encoding.UTF8.GetBytes(json);
                         var meta = new byte[0];
+                        var payload = x.Payload;
+                        if (payload.GetType().GetProperty("Metadata") != null)
+                        {
+                            var propType = payload.GetType().GetProperty("Metadata").PropertyType;
+                            var metaJson = JsonConvert.SerializeObject(payload.GetType().GetProperty("Metadata").GetValue(x.Payload), propType, _serializerSettings);
+                            meta = Encoding.UTF8.GetBytes(metaJson);
+                        }
                         return new EventData(eventId, x.GetType().FullName, true, data, meta);
                     });
 
